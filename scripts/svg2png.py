@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert all SVGs in SVG/ to PNGs in PNG/ (200x200, white background)."""
+"""Convert all SVGs in SVG/ to PNGs in PNG/ (200x200, transparent background)."""
 import os
 import sys
 import cairosvg
@@ -20,7 +20,6 @@ def convert_one(svg_file: str) -> tuple[str, bool, str]:
             write_to=str(png_path),
             output_width=SIZE,
             output_height=SIZE,
-            background_color="white",
         )
         return (name, True, "")
     except Exception as e:
