@@ -1,0 +1,19 @@
+scripts/svg2png.py
+  s_72955f78882232::t_743ddeeba88920 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "23f78b823ec83542585cfed315af26de576f030d",
+  "prompts": {},
+  "sessions": {
+    "s_72955f78882232": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feb280333ffenrCEDRx4zsjGnt",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Leandro Mediza <leandro.mediza@glovoapp.com>"
+    }
+  }
+}
