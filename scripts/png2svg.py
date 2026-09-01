@@ -25,29 +25,61 @@ PNG_DIR = PROJECT_DIR / "PNG"
 SVG_DIR = PROJECT_DIR / "SVG"
 
 
-def _quantize_image(img: Image.Image, colors: int = 16) -> Image.Image:
-    """Quantize to N colors, preserving alpha channel. Preserves near-white pixels."""
+def _quantize_image(img: Image.Image, colors: int = 16, merge_dist: float = 20) -> Image.Image:
+    """Quantize to N colors, preserving alpha. Merges similar colors via nearest-color."""
     arr = np.array(img.convert("RGBA"))
+
+    # Flatten semi-transparent pixels onto white background
+    semi = (arr[:,:,3] > 0) & (arr[:,:,3] < 255)
+    if semi.any():
+        alpha = arr[semi, 3:4].astype(np.float32) / 255.0
+        arr[semi, :3] = (arr[semi, :3].astype(np.float32) * alpha + 255 * (1 - alpha)).astype(np.uint8)
+        arr[semi, 3] = 255
 
     # Mark near-white pixels before quantization
     r, g, b, a = arr[:,:,0], arr[:,:,1], arr[:,:,2], arr[:,:,3]
     near_white = (r > 225) & (g > 225) & (b > 225) & (a > 0)
     white_mask = near_white.copy()
 
-    # Quantize the RGB channels
-    rgb = img.convert("RGB")
-    quantized = rgb.quantize(colors=colors, method=Image.Quantize.MEDIANCUT)
-    quantized = quantized.convert("RGB")
-    result = np.array(quantized)
-    alpha = np.array(img.split()[3])
-    result = np.dstack([result, alpha])
+    # Quantize
+    rgb = Image.fromarray(arr[:, :, :3], 'RGB')
+    quantized = rgb.quantize(colors=colors, method=Image.Quantize.MEDIANCUT).convert("RGB")
+    result = np.dstack([np.array(quantized), arr[:, :, 3]])
 
-    # Force white on the pre-identified near-white pixels
-    result[white_mask, 0] = 255
-    result[white_mask, 1] = 255
-    result[white_mask, 2] = 255
+    # Force white on near-white pixels
+    result[white_mask] = [255, 255, 255, 255]
 
-    return Image.fromarray(result)
+    # Merge similar colors
+    opaque_mask = result[:,:,3] > 0
+    unique_q = np.unique(result[opaque_mask][:,:3], axis=0)
+
+    merged = []
+    used = set()
+    for i, c1 in enumerate(unique_q):
+        if i in used: continue
+        group = [c1]
+        for j, c2 in enumerate(unique_q):
+            if j <= i or j in used: continue
+            dist = np.sqrt(np.sum((c1.astype(int) - c2.astype(int))**2))
+            if dist < merge_dist:
+                group.append(c2)
+                used.add(j)
+        merged.append(np.mean(group, axis=0).astype(np.uint8))
+        used.add(i)
+
+    merged = np.array(merged)
+
+    # Remap using nearest color
+    out = result.copy()
+    pixels = out[opaque_mask][:,:3].astype(np.float32)
+    diffs = pixels[:, np.newaxis, :] - merged[np.newaxis, :, :].astype(np.float32)
+    dists = np.sqrt(np.sum(diffs**2, axis=2))
+    nearest = np.argmin(dists, axis=1)
+    out[opaque_mask, 0] = merged[nearest, 0]
+    out[opaque_mask, 1] = merged[nearest, 1]
+    out[opaque_mask, 2] = merged[nearest, 2]
+
+    return Image.fromarray(out)
 
 
 def _extract_layers(img: Image.Image, min_area: int = 20) -> list[tuple[tuple[int, int, int, int], np.ndarray]]:
