@@ -32,6 +32,10 @@ DEFAULT_PRE_COLORS = 14
 DEFAULT_OUTLINE_THRESHOLD = 40  # RGB color-distance radius around outline_color (conservative after mean-shift)
 DEFAULT_OUTLINE_COLOR = (6, 38, 81)  # #062651
 
+# Chroma-key color used as background for transparent areas; removed from SVG after tracing.
+# Magenta is never a natural pictogram color, so it's safe to use as a marker.
+_CHROMA = (255, 0, 255)
+
 
 def _parse_hex_color(hex_str: str) -> tuple[int, int, int]:
     hex_str = hex_str.lstrip("#")
@@ -54,7 +58,10 @@ def _prepare_png(
     outline_color: tuple[int, int, int],
 ) -> str:
     img = Image.open(png_path).convert("RGBA")
+    alpha = np.array(img.split()[3])
+    transparent = alpha < 128  # pixels that were originally transparent
 
+    # Use white for compositing so mean-shift works well on pictogram content
     bg = Image.new("RGBA", img.size, (255, 255, 255, 255))
     bg.paste(img, mask=img.split()[3])
     arr = np.array(bg.convert("RGB"), dtype=np.float32)
@@ -71,6 +78,9 @@ def _prepare_png(
     near = _near_outline_mask(arr, outline_color, outline_threshold)
     arr[near] = outline_color
 
+    # Stamp chroma-key on transparent pixels so we can remove them from the SVG later
+    arr[transparent] = _CHROMA
+
     img = Image.fromarray(arr.astype(np.uint8), "RGB")
 
     if target_size:
@@ -86,8 +96,9 @@ def _prepare_png(
         labels = km.fit_predict(pixels)
         centroids = km.cluster_centers_.astype(np.uint8)
         quantized = centroids[labels].reshape(arr.shape).astype(np.float32)
-        # Re-apply outline snap after k-means
+        # Re-apply snaps after k-means
         quantized[near] = outline_color
+        quantized[transparent] = _CHROMA  # ensure chroma survives quantization
         img = Image.fromarray(quantized.astype(np.uint8), "RGB")
 
     tmp = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
@@ -96,13 +107,20 @@ def _prepare_png(
 
 
 def _fill_svg_gaps(svg_path: str) -> None:
-    """Add a thin stroke matching each path's fill to close sub-pixel gaps between regions."""
+    """Add thin stroke matching each path's fill to close sub-pixel gaps, then remove chroma background."""
     with open(svg_path) as f:
         content = f.read()
     content = re.sub(
         r'fill:(#[0-9a-fA-F]{6}); stroke:none;',
         r'fill:\1; stroke:\1; stroke-width:1;',
         content,
+    )
+    # Remove chroma-key paths (magenta = transparent background marker)
+    content = re.sub(
+        r'<path style="fill:#ff00ff;[^"]*"[^/]*/>\n?',
+        '',
+        content,
+        flags=re.IGNORECASE,
     )
     with open(svg_path, "w") as f:
         f.write(content)
