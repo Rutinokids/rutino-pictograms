@@ -1,0 +1,102 @@
+# Pictogramas marcados como inciertos (revisados)
+
+Revisión completa el 2026-09-12. 43 ítems se sacaron del set final (irrelevantes/culturales muy específicos/clínicos/inapropiados),
+4 se renombraron. El resto (abajo) se dejó como estaba: ambigüedad menor sin impacto real.
+Quedan 95 ítems sin cambios (ambigüedad menor, no requieren acción).
+
+
+- **PE_class** (es propuesto: "Clase de educación física") — French abbreviation EPS added as synonym but formal term used as nombre for clarity.
+- **arch_lever_file** (es propuesto: "Carpeta de palanca") — DeepL mistranslated 'file' as nail file; interpreted as an office lever-arch binder, moderate confidence.
+- **back_1** (es propuesto: "Atrás") — Ambiguous whether this means the body part 'back' (duplicate of 'back') or the direction 'behind/backward'; assumed direction to differentiate from 'back'.
+- **beanbag** (es propuesto: "Puf") — Could mean a beanbag chair (puf) or a small beanbag juggling toy; picked chair interpretation given toy category context is ambiguous.
+- **bend_,_to** (es propuesto: "Agacharse") — Ambiguous whether this depicts a person bending over (body) or bending an object; assumed body-bending action.
+- **bend_2_,_to** (es propuesto: "Doblar") — Companion variant to 'bend, to' - ambiguous whether it depicts bending an object vs. a body action; assumed bending an object.
+- **big_wheel** (es propuesto: "Noria") — Could mean a Ferris wheel (amusement ride) or the 'Big Wheel' tricycle toy brand; picked Ferris wheel given travel/vacation category.
+- **bottom_3** (es propuesto: "Culito") — Original 'es' (Parte inferior) looked like a literal mistranslation; assumed 'bottom' = buttocks given the body-parts category.
+- **bow** (es propuesto: "Lazo") — Ambiguous - could be a ribbon bow (decorative) or an archery bow; category context suggests ribbon bow but not certain without the image.
+- **butternut_squash** (es propuesto: "Calabaza moscada") — Catalan common name for this specific squash variety can vary regionally.
+- **calf** (es propuesto: "Pantorrilla") — Original 'es' (Pernil=ham) was a mistranslation; fixed to 'Pantorrilla' (lower leg body part).
+- **catherine_wheel** (es propuesto: "Girándula") — Regional firework name varies a lot across Spanish-speaking areas and other languages (rueda catalina/girándula); not fully sure which term is most recognizable to the target audience.
+- **celeriac** (es propuesto: "Apionabo") — Less common vegetable; Catalan term 'api-nap' may not be the most familiar to children/parents.
+- **chair_wing_back** (es propuesto: "Sillón orejero") — Italian term for 'wing back chair' (poltrona a orecchioni) is uncommon; used a descriptive alternative instead.
+- **change_weather_,_to** (es propuesto: "Cambiar el tiempo") — Ambiguous concept - unclear if depicting weather forecast changing, a device, or nature itself
+- **chips** (es propuesto: "Patatas fritas") — Original 'es' left the English word 'Chips' untranslated; assumed British English meaning (fries) given the vegetables category, fixed to 'Patatas fritas'.
+- **chips_packet** (es propuesto: "Bolsa de patatas fritas") — British 'chips packet' usually means a bag of crisps, not fries; translation follows that reading but could be either depending on the image.
+- **coach** (es propuesto: "Autocar") — English 'coach' is ambiguous between a long-distance bus and a sports trainer; assumed bus given the 'Transporte por carretera' category.
+- **cockatiel** (es propuesto: "Ninfa (ave)") — Cockatiel translation varies regionally (ninfa/carolina in Spanish, calopsitte in French); depiction from label alone is ambiguous.
+- **cornet** (es propuesto: "Cucurucho de helado") — 'Cornet' is British English for ice cream cone; original ES translation 'Corneta' (a musical instrument) was clearly wrong - fixed but flagging to confirm the pictogram indeed shows an ice cream cone.
+- **correct_thought** (es propuesto: "Idea correcta") — Ambiguous AAC concept - unclear if it depicts 'having the right idea' or 'positive thinking'; best guess given without image.
+- **crawl_,_to** (es propuesto: "Gatear") — Ambiguous whether depicting a baby crawling or crawling on the ground (e.g. soldier-style)
+- **cream_ointment** (es propuesto: "Pomada") — Generic term, unclear exact product depicted (cream vs medicinal ointment).
+- **cupboard** (es propuesto: "Armario") — Ambiguous with 'wardrobe' - could be a kitchen/general cabinet or closet; exact es/it translation depends on the pictogram image.
+- **draw_,_to** (es propuesto: "Dibujar") — DeepL translated as 'Empatar' (sports tie) but likely means 'to draw/sketch' - genuinely ambiguous without seeing the image
+- **dry_hair_2_,_to** (es propuesto: "Secarse el pelo") — Duplicate of 'dry_hair, to'; original 'es' was garbled ('Cabello seco' rather than the action). Possibly a different pictogram variant (e.g. towel vs hairdryer).
+- **dry_hands_2_,_to** (es propuesto: "Secarse las manos") — Duplicate of 'dry_hands, to'; original 'es' was garbled ('Manos secas' rather than the action). Possibly a different pictogram variant.
+- **even** (es propuesto: "Uniforme") — Ambiguous between 'even/uniform surface or shape' and 'even number'; gave a general uniform/smooth translation covering both senses.
+- **female_side** (es propuesto: "Perfil de mujer") — Label is vague ('female side') - guessed it depicts a woman's face in side profile, but not certain what the pictogram actually shows.
+- **flannel** (es propuesto: "Toallita de baño") — UK English 'flannel' usually means a small washcloth, but could be read as the fabric; picked washcloth interpretation.
+- **forward_wind** (es propuesto: "Avance rápido") — Unclear pictogram concept - could be fast-forward control or headwind; DeepL's 'Viento de proa' seems wrong
+- **front** (es propuesto: "Delante") — Original 'es' (Delantero) read oddly for a body-parts category; assumed direction/side opposite of 'back_1'.
+- **frying_pan** (es propuesto: "Sartén") — Catalan word 'paella' means both the frying pan and the rice dish — kept as is since that's the correct term, flagging for awareness.
+- **fuzzy** (es propuesto: "Peludo") — Ambiguous: could mean blurry/out-of-focus or fluffy/furry texture; picked fluffy given nearby texture words (spotty, sticky, striped).
+- **gum** (es propuesto: "Encía") — Original 'es' (Chicle=chewing gum) was a mistranslation; fixed to 'Encía' (tooth gum) given the body-parts category.
+- **hand_punch** (es propuesto: "Perforadora de mano") — Unclear how a 'hand punch' differs visually from a regular 'hole punch' (separate id); translated generically as a hand-held hole punch.
+- **hat_Christmas** (es propuesto: "Gorro de Navidad") — Original es translation was garbled ('Aquella Navidad'); corrected to 'Gorro de Navidad' based on label 'hat Christmas', but could also mean a specific Santa hat item.
+- **hatch_,_to** (es propuesto: "Salir del huevo") — Ambiguous between egg hatching and a hatch/trapdoor opening
+- **hip** (es propuesto: "Cadera") — Original 'es' (Moderno=trendy) was a mistranslation of the adjective 'hip'; fixed to 'Cadera' (hip joint) given the body-parts category.
+- **honey** (es propuesto: "Miel") — DeepL mistranslated 'honey' as the term of endearment 'Cariño' instead of the food; corrected to 'Miel'.
+- **jam** (es propuesto: "Mermelada") — Original ES 'Atascamiento' was a mistranslation (DeepL confused 'jam' the food with 'traffic jam'); fixed to 'Mermelada' but flagging for confirmation.
+- **jar** (es propuesto: "Tarro") — DeepL output 'Tar' looked like a truncated typo for 'Tarro'; corrected.
+- **kick_swimming_,_to** (es propuesto: "Nadar dando patadas") — Specific swimming technique term, uncertain natural phrasing across languages
+- **koosh_ball** (es propuesto: "Pelota de gomas") — Brand-specific toy (rubber-filament ball); translations are descriptive approximations, not established terms.
+- **light** (es propuesto: "Ligero") — Ambiguous between 'ligero' (not heavy) and 'luz' (brightness) in the original English/DeepL source; chose the weight sense based on category and pairing with 'heavy', but could depict brightness.
+- **mange_tout** (es propuesto: "Tirabeques") — Original 'es' translation was a literal description, not the standard Spanish name; fixed to 'Tirabeques'.
+- **marrow** (es propuesto: "Calabacín grande") — Vegetable marrow is not commonly known/named in Spanish/Catalan; original 'es' (Médula=bone marrow) was wrong. Used a descriptive term instead.
+- **mistake_no_wrong** (es propuesto: "Error, no pasa nada") — Unusual reassurance-style label ('mistake is not wrong'); translation is interpretive rather than literal.
+- **mole** (es propuesto: "Lunar") — In Catalan, 'piga' is used for both mole and freckle, so it may overlap with the 'freckles' entry.
+- **non_speaking** (es propuesto: "No verbal") — Could describe a non-verbal person (AAC context) or literally 'not speaking now'; picked the AAC/non-verbal interpretation.
+- **order_1_,_to** (es propuesto: "Pedir") — Ambiguous between 'to order' (request/command) and 'to put in order' (arrange)
+- **order_2_,_to** (es propuesto: "Pedir") — Ambiguous between 'to order' (request/command) and 'to put in order' (arrange)
+- **paint_childs** (es propuesto: "Pintura infantil") — Unclear if the pictogram depicts a paint set for kids or a child in the act of painting.
+- **party_popper** (es propuesto: "Cañón de confeti") — Ambiguous item - could be a confetti popper/cannon or a party cracker; translation across languages is approximate.
+- **picture** (es propuesto: "Cuadro") — Could mean a wall picture/painting or a generic photo/image; translated as 'cuadro' based on furniture category context.
+- **place_setting** (es propuesto: "Puesta de mesa") — DeepL mistranslated 'place setting' as 'Modo de servir' (unrelated meaning); corrected to 'Puesta de mesa'.
+- **play_,_to** (es propuesto: "Jugar") — Ambiguous between 'jugar' (to play a game) and 'reproducir' (to play media) without seeing the image
+- **playing_card_picture** (es propuesto: "Carta de la baraja") — Unclear exact depiction - could be a picture-side playing card or a matching-game card.
+- **pluck_,_to** (es propuesto: "Arrancar") — Ambiguous depiction - could be plucking flowers, feathers, or eyebrows
+- **pool_snooker** (es propuesto: "Billar") — Pool and snooker are distinct billiard games; used generic 'billar' which may blur the distinction.
+- **pop_socks** (es propuesto: "Medias cortas") — Garment (knee-high nylon socks) has no exact common equivalent in these languages; gave best-guess descriptive translations.
+- **pot_noodle** (es propuesto: "Fideos instantáneos") — Brand-specific British product (instant noodle cup); translated generically as 'instant noodles', may not perfectly match the specific packaging shown in pictogram.
+- **pupil** (es propuesto: "Pupila") — Original 'es' (Alumno=student) was a mistranslation; fixed to 'Pupila' (eye part) given the body-parts category.
+- **scales** (es propuesto: "Báscula de cocina") — DeepL mistranslated 'scales' (kitchen scale) as 'Escalas' (stairs/musical scales); corrected to 'Báscula de cocina'.
+- **scales_2** (es propuesto: "Báscula de cocina") — DeepL mistranslated 'scales' (kitchen scale) as 'Escalas' (stairs/musical scales); corrected to 'Báscula de cocina'.
+- **scoop** (es propuesto: "Cucharón dosificador") — DeepL mistranslated 'scoop' as 'Primicia' (news scoop); corrected, but exact type of kitchen scoop (ice cream/flour/measuring) is unclear from label alone.
+- **see_saw** (es propuesto: "Balancín") — French/Italian terms for see-saw vary regionally; picked common terms but should be verified.
+- **shin** (es propuesto: "Espinilla") — Catalan word for shin ('canyella de la cama') is less common than expected; a human should confirm the most natural everyday term.
+- **slide_,_to** (es propuesto: "Deslizarse") — Ambiguous between generic 'to slide' and playground slide; translated as the general verb.
+- **sole** (es propuesto: "Planta del pie") — Original 'es' (Única=only/unique) was a mistranslation; fixed to 'Planta del pie' (sole of the foot) given the body-parts category.
+- **sparkler** (es propuesto: "Bengala") — No single standard word for 'sparkler' (hand-held firework) in it/ca; translation is descriptive.
+- **spotty_2** (es propuesto: "Con manchas") — Unclear whether 'spotty' refers to freckles, acne/pimples, or a patterned skin condition from the label alone.
+- **squash** (es propuesto: "Refresco concentrado") — British 'squash' (fruit drink concentrate) has no exact one-word equivalent in these languages; translated descriptively. Original ES field was wrong (mistranslated as 'pumpkin').
+- **stamp_,_to** (es propuesto: "Sellar") — Could depict a rubber stamp or stamping feet; translated as rubber-stamping.
+- **star_stacker** (es propuesto: "Apilador de estrellas") — Specific toy name (stacking rings/stars); translations are descriptive approximations.
+- **stock** (es propuesto: "Caldo") — DeepL mistranslated 'stock' (cooking broth) as 'Existencias' (inventory/business stock); corrected to 'Caldo'.
+- **stomach_1** (es propuesto: "Barriga") — Duplicate of 'stomach'; assumed this one refers to the belly/tummy rather than the organ, but can't confirm without seeing the image.
+- **stroke_2_,_to** (es propuesto: "Acariciar") — DeepL gave 'Ictus' (medical stroke); interpreted instead as petting/caressing motion, low confidence which the pictogram shows.
+- **sugar_brown** (es propuesto: "Azúcar moreno") — DeepL produced garbled word order 'Marrón azúcar'; corrected to natural 'Azúcar moreno'.
+- **sugar_white** (es propuesto: "Azúcar blanco") — DeepL produced an odd simile 'Blanco como el azúcar' instead of the plain term; corrected to 'Azúcar blanco'.
+- **surgery_health_centre** (es propuesto: "Centro de salud") — 'Surgery' in British English means a doctor's clinic, not an operation; translated as health centre but hard to be fully certain of the depicted scene.
+- **swede** (es propuesto: "Colinabo") — Swede/rutabaga has no widely-known common Catalan name; translation may not match the everyday word parents use.
+- **swiss_roll** (es propuesto: "Bizcocho enrollado") — Regional dessert name varies a lot (brazo de gitano, etc.); used a neutral descriptive term instead.
+- **take_out_,_to** (es propuesto: "Sacar") — Could mean 'take out food' (takeaway) rather than the generic 'take something out'; DeepL suggested takeaway, low confidence.
+- **tart** (es propuesto: "Tarta") — Original 'es' (Agrio=sour) looked like a mistranslation of the adjective 'tart'; assumed the pastry given the desserts category.
+- **tear_,_to** (es propuesto: "Rasgar") — Ambiguous between 'tear' as in ripping paper and 'tear' as in crying (DeepL chose the crying sense); translated as ripping.
+- **teeth_2** (es propuesto: "Dientes") — Duplicate of 'teeth' with no visible distinction from the label alone.
+- **temple** (es propuesto: "Sien") — Original 'es' (Templo=temple building) was a mistranslation; fixed to 'Sien' (side of the head) given the body-parts category.
+- **thumb** (es propuesto: "Pulgar") — Original 'es' (Miniatura=thumbnail) was a mistranslation; fixed to 'Pulgar' (thumb) given the body-parts category.
+- **tie_,_to** (es propuesto: "Atar") — Ambiguous between 'tie' (shoelaces/knot) and 'tie' (game score draw); DeepL suggested draw. Translated as tying/knotting.
+- **tie_2_,_to** (es propuesto: "Atar") — Ambiguous 'tie' verb - could mean tying laces, a necktie, or a general tying action; picked general 'atar'.
+- **time_out** (es propuesto: "Rincón de la calma") — Concept ambiguous across cultures (calm corner vs. disciplinary time-out); chose the positive 'calm corner' framing for a children's app.
+- **tinsel** (es propuesto: "Espumillón") — 'Espumillón'/equivalents for tinsel are not universally known terms; translations are approximate especially in fr/it/ca.
+- **whisk** (es propuesto: "Varillas de batir") — Given English word is verb form 'Batir' but concept likely depicts the tool (a whisk); translated as noun 'Varillas de batir' across languages - please verify pictogram shows tool vs action.
+- **windpipe** (es propuesto: "Tráquea") — Duplicate concept of 'trachea' with no visible distinction from the label alone.
